@@ -15,5 +15,5 @@ void main(){
     printf("Desconto: (%%): ");
     scanf("%d",&desconto);
     float total=preco-(preco*desconto/100);
-    printf("O produto %s custava %.2f,mas com %d%% de desconto, passa a custar R$%.2f",produto,preco,desconto,total);
+    printf("O produto %s custava R$%.2f,mas com %d%% de desconto, passa a custar R$%.2f",produto,preco,desconto,total);
 }
