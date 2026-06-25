@@ -3,10 +3,10 @@
 
 void main(){
     setlocale(LC_ALL,"Portuguese");
-    char letra;
+    char letra,ant,dep;
     printf("Digite uma Letra: ");
     scanf("%c",&letra);
-    char ant=letra-1;
-    char dep=letra+1;
+    ant=letra-1;
+    dep=letra+1;
     printf("Antes da letra %c, temos a letra %c.Depois temos a letra %.c",letra,ant,dep);
 }

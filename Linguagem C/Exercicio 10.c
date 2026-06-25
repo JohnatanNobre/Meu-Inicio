@@ -5,7 +5,7 @@
 void main(){
     setlocale(LC_ALL,"Portuguese");
     char produto[20];
-    float preco;
+    float preco,total;
     int desconto;
     printf("Produto: ");
     fgets(produto,sizeof(produto),stdin);
@@ -14,6 +14,6 @@ void main(){
     scanf("%f",&preco);
     printf("Desconto: (%%): ");
     scanf("%d",&desconto);
-    float total=preco-(preco*desconto/100);
+    total=preco-(preco*desconto/100);
     printf("O produto %s custava R$%.2f,mas com %d%% de desconto, passa a custar R$%.2f",produto,preco,desconto,total);
 }

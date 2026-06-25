@@ -3,11 +3,12 @@
 
 void main(){
     setlocale(LC_ALL,"Portuguese");
-    float num;
+    int num;
+    float terc;
     printf("Digite um numero: ");
-    scanf("%f",&num);
+    scanf("%d",&num);
     int dobro=num*2;
-    float terc=num/3;
-    printf("Analisando o numero %.0f, seu dobro é %d e a terça parte é %.2f",num,dobro,terc);
+    terc=(float)num/3;
+    printf("Analisando o numero %d, seu dobro é %d e a terça parte é %.2f",num,dobro,terc);
 
 }
