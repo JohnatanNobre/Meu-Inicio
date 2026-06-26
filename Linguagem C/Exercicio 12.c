@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <locale.h>
+
+void main() {
+    setlocale(LC_ALL,"Portuguese");
+    float n1,n2,media;
+    printf("Primeira nota: ");
+    scanf("%f",&n1);
+    printf("Segunda nota: ");
+    scanf("%f",&n2);
+    media=((n1+n2)/2);
+    printf("Com as notas %.2f  e %.2f , o aluno tem média media %.2f e sua situação é %s ",n1,n2,media,(media>=7)?"APROVADO":"REPROVADO");
+}
