@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <locale.h>
+
+void main() {
+    setlocale(LC_ALL,"Portuguese");
+    float n1,n2,media;
+    printf("Primeira nota: ");
+    scanf("%f",&n1);
+    printf("Segunda nota: ");
+    scanf("%f",&n2);
+    media=((n1+n2)/2);
+    printf("---------------------------------------------------------\n");
+    if(media>=7){
+        printf("MEUS PARABÉNS!");
+    }
+    printf("A sua média final foi %.2f\n",media);
+    printf("---------------------------------------------------------");
+ }
